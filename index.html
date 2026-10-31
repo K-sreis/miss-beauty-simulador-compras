@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miss Beauty — Simulador de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- topo: nome e descrição da loja -->
+  <header class="topo">
+    <h1>Miss Beauty</h1>
+    <p class="lema">Cosméticos com elegância e preço justo</p>
+    <p class="apresentacao">
+      A Miss Beauty é uma boutique de cosméticos inspirada no charme das lojinhas de Paris.
+      Aqui você encontra maquiagem e cuidados com a pele escolhidos para realçar a sua beleza natural.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- produtos (os preços são os mesmos do script.js) -->
+    <section class="produtos">
+      <h2>Nossos produtos</h2>
+      <div class="grade">
+
+        <article class="produto">
+          <div class="produto-imagem">Batom</div>
+          <h3>Batom Cremoso Rosé</h3>
+          <p class="descricao">Acabamento cremoso e cor rosada para o dia a dia.</p>
+          <p class="preco">R$ 29,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Gloss</div>
+          <h3>Gloss Labial Cristal</h3>
+          <p class="descricao">Brilho transparente que hidrata e deixa os lábios macios.</p>
+          <p class="preco">R$ 24,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Blush</div>
+          <h3>Blush Compacto Rosa Antigo</h3>
+          <p class="descricao">Toque suave de cor nas bochechas, fácil de esfumar.</p>
+          <p class="preco">R$ 34,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Iluminador</div>
+          <h3>Iluminador Perolado</h3>
+          <p class="descricao">Brilho delicado para realçar maçãs do rosto e nariz.</p>
+          <p class="preco">R$ 39,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Sérum facial</div>
+          <h3>Sérum Facial Vitamina C</h3>
+          <p class="descricao">Ajuda a uniformizar o tom e dar luminosidade à pele.</p>
+          <p class="preco">R$ 59,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Lápis de olho</div>
+          <h3>Lápis de Olho Preto</h3>
+          <p class="descricao">Traço macio e preciso, ideal para contornar o olhar.</p>
+          <p class="preco">R$ 14,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Contorno</div>
+          <h3>Contorno em Bastão</h3>
+          <p class="descricao">Textura cremosa para esculpir o rosto com naturalidade.</p>
+          <p class="preco">R$ 37,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Paleta de sombras</div>
+          <h3>Paleta de Sombras Lavanda</h3>
+          <p class="descricao">Tons de lilás, creme e azul pastel para looks delicados.</p>
+          <p class="preco">R$ 49,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Pó facial</div>
+          <h3>Pó Facial Translúcido</h3>
+          <p class="descricao">Controla o brilho e finaliza a make com acabamento aveludado.</p>
+          <p class="preco">R$ 32,90</p>
+        </article>
+
+        <article class="produto">
+          <div class="produto-imagem">Água micelar</div>
+          <h3>Água Micelar 200 ml</h3>
+          <p class="descricao">Remove a maquiagem e limpa a pele sem agredir.</p>
+          <p class="preco">R$ 27,90</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- instruções e botão que chama a função do JavaScript -->
+    <section class="instrucoes">
+      <h2>Como usar o simulador</h2>
+      <ol>
+        <li>Clique no botão <strong>Simular compra</strong>.</li>
+        <li>Responda, uma caixa por vez, quantas unidades de cada produto você deseja.</li>
+        <li>Digite <strong>0</strong> para os produtos que não quiser comprar.</li>
+        <li>Se o subtotal for de R$ 270,00 ou mais, informe a forma de pagamento.</li>
+        <li>Veja o resumo da compra na janela final.</li>
+      </ol>
+      <p class="desconto">Desconto especial: 7% para compras a partir de R$ 270,00 pagas com Pix.</p>
+      <button class="botao" onclick="simularCompra()">Simular compra</button>
+    </section>
+
+  </main>
+
+  <!-- rodapé -->
+  <footer class="rodape">
+    <p>Miss Beauty — Simulador de Compras</p>
+    <p>Desenvolvido por Kethelyn Reis Sousa</p>
+  </footer>
+
+  <!-- liga o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
